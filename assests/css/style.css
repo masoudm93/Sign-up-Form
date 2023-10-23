@@ -1,0 +1,81 @@
+.container {
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 20px;
+  background-color: #2b4242;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid #444;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  height: 310px;
+  animation: moveup 1.2s ease;
+}
+
+@keyframes moveup {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.inputs {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 20px 0 4px 0;
+  border-color: #aaa;
+  border-width: 0 0 2px 0;
+  color: #fff;
+  outline: 0;
+  padding: 0 15px;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.inputs input:focus {
+  border-bottom: 2px solid #fff;
+}
+
+.half {
+  width: 50%;
+}
+
+.inputs input:placeholder-shown+label {
+  color: #999;
+  right: 0;
+  bottom: -4px;
+}
+
+.inputs input:focus+label,
+.inputs input+label {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
+  line-height: 60px;
+  font-size: 14px;
+  transition: all 0.25s;
+  color: #999;
+}
+
+.inputs button {
+  border: 0;
+  padding: 10px 40px;
+  background-color: #465;
+  color: #fff;
+  float: left;
+  transition: border 0.25s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.inputs button:hover {
+  border: 1px solid #999;
+}
